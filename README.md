@@ -19,19 +19,25 @@ feature-based NLP methods and modern representation learning approaches.
 - Accelerate
 - Speed-efficient with JAX/JIT
 
-## Dataset
+## Dataset from
 https://github.com/anujgupta82/Representation-Learning-for-NLP
 
 ## How to Run
 
 ### 1. Clone Repo
+```
 git clone https://github.com/DanielSunkiLee/BoW-BERT.git
 cd bow-bert
+```
 
 ### 2. Quickstart
+```
 pip install -r requirements.txt
+```
 
 ### 3. Run
+```
 python train.py
+```
 
 +++ Score...
