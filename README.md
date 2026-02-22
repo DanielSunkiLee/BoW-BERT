@@ -63,4 +63,4 @@ During fine-tuning, the model demonstrates stable optimization and rapid converg
 - No signs of gradient explosion or instability.
 
 ## Citing 🤗BERT
-[BERT](https://huggingface.co/google-bert/bert-base-uncased)
+This project is built upon the pretrained [BERT](https://huggingface.co/google-bert/bert-base-uncased) model from Hugging Face Transformes,leveraging its robust contextual representations for sentiment classification.
