@@ -46,7 +46,13 @@ pip install -r requirements.txt
 python train.py
 ```
 
-+++ add Score...
+## Results
+
+| epoch | Loss | Grad Norm | Learning Rate |
+|-------|------|-----------|---------------|
+| 3.125 | 0.467|   8.09    |   1.802e-05   |
+| 6.25  | 0.092|  0.3828   |   1.602e-05   |
+| 9.375 | 0.006| 0.03089   |   1.402e-05   |
 
 ### Citing 🤗BERT
 [BERT](https://huggingface.co/google-bert/bert-base-uncased)
