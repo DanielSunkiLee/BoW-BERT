@@ -1,12 +1,7 @@
-<h1 align="center">BoW -> BERT : Sentiment Analysis</h1>
+<h1 align="center">BoW2BERT : Sentiment Analysis</h1>
 
-This project explores sentiment analysis using traditional BoW models
-and modern Transformer-based models(BERT).
-
-## Motivation
-
-This project was created to understand the difference between traditional
-feature-based NLP methods and modern representation learning approaches.
+This project explores sentiment analysis using traditional Bag-of-Words(BoW) models
+and modern Transformer-based models,BERT. This project was motivated from adaption of one of the nowadays' serious standard model, Transformer, especially BERT to feature-based NLP methods, Bag-of-Words.
 
 ### (From) Bag-of-Words Pipeline
 - CountVectorizer (unigram+bigram)
@@ -19,7 +14,7 @@ feature-based NLP methods and modern representation learning approaches.
 - Accelerate
 - Speed-efficient with JAX/JIT
 
-## Dataset from
+## Reference 
 https://github.com/anujgupta82/Representation-Learning-for-NLP
 
 ## How to Run
