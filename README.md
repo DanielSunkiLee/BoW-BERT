@@ -1,7 +1,7 @@
 <h1 align="center">BoW2BERT : Sentiment Analysis</h1>
 
 ## 🔥 Summary
-BERT outperforms Bag-of-Words by leveraging contextual embeddings, achieving higher accuracy (+4%) and F1-score with stable convergence.
+'BERT outperforms Bag-of-Words by leveraging contextual embeddings, achieving higher accuracy (+4%) and F1-score with stable convergence.'
 
 This project explores sentiment analysis using traditional Bag-of-Words(BoW) models
 and modern Transformer-based models,BERT. 
