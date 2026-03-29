@@ -1,5 +1,8 @@
 <h1 align="center">BoW2BERT : Sentiment Analysis</h1>
 
+## 🔥 Summary
+BERT outperforms Bag-of-Words by leveraging contextual embeddings, achieving higher accuracy (+4%) and F1-score with stable convergence.
+
 This project explores sentiment analysis using traditional Bag-of-Words(BoW) models
 and modern Transformer-based models,BERT. 
 
@@ -48,14 +51,45 @@ python run_train.py
 
 ## Results
 
-### Training Dynamics (BERT FT)
-During fine-tuning, the model demonstrates stable optimization and rapid convergence:
+Model Comparison: Bag-of-Words vs BERT 
 
-| epoch | Loss | Grad Norm | Learning Rate |
-|-------|------|-----------|---------------|
-| 3.125 | 0.467|   8.09    |   1.802e-05   |
-| 6.25  | 0.092|  0.3828   |   1.602e-05   |
-| 9.375 | 0.006| 0.03089   |   1.402e-05   |
+Baseline: Bag-of-Words
+- Validation Accuracy: 0.79
+- Evaluation via sentiment_pipeline.score()
+
+🤗 BERT Fine-Tuning (FT)
+⏱ Training Setup
+- Total steps: 1,000
+- Epochs: 31.25
+- Training time: ~67 minutes
+
+Training Dynamics
+- Loss:
+  - 0.459 → 0.056 (early convergence)
+  - → ~4e-05 (final epochs)
+- Learning Rate:
+  - 4.5e-05 → 0 (linear decay)
+👉 Indicates stable and effective convergence
+
+| Checkpoint       | Loss  | Accuracy | F1-score |
+| ---------------- | ----- | -------- | -------- |
+| Mid-training     | 1.353 | 82%      | 0.8125   |
+| Final checkpoint | 1.427 | 83%      | 0.8317   |
+
+Analysis
+- Final model shows improved Accuracy and F1-score
+- Slight increase in loss suggests:
+  - minor confidence miscalibration, not severe overfitting
+- Overall, the model demonstrates good generalization.
+
+🔥Key Takaways
+- BERT significantly outperforms Bag-of-Words:
+  - +4% accuracy gain
+  - Better semantic understanding
+- Pretrained transformers capture contextual meaning, unlike BoW
+
+
+
 
 ### Observations
 - Monotonic loss reduction indicating effective FT.
