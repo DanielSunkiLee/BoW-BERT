@@ -58,6 +58,7 @@ Baseline: Bag-of-Words
 - Evaluation via sentiment_pipeline.score()
 
 🤗 BERT Fine-Tuning (FT)
+
 ⏱ Training Setup
 - Total steps: 1,000
 - Epochs: 31.25
@@ -82,7 +83,7 @@ Analysis
   - minor confidence miscalibration, not severe overfitting
 - Overall, the model demonstrates good generalization.
 
-🔥Key Takaways
+🤔 Key Takaways
 - BERT significantly outperforms Bag-of-Words:
   - +4% accuracy gain
   - Better semantic understanding
