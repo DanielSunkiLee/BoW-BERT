@@ -57,9 +57,9 @@ Baseline: Bag-of-Words
 - Validation Accuracy: 0.79
 - Evaluation via sentiment_pipeline.score()
 
-🤗 BERT Fine-Tuning (FT)
+BERT Fine-Tuning (FT)
 
-⏱ Training Setup
+Training Setup
 - Total steps: 1,000
 - Epochs: 31.25
 - Training time: ~67 minutes
@@ -83,7 +83,7 @@ Analysis
   - minor confidence miscalibration, not severe overfitting
 - Overall, the model demonstrates good generalization.
 
-🤔 Key Takaways
+Key Takaways
 - BERT significantly outperforms Bag-of-Words:
   - +4% accuracy gain
   - Better semantic understanding
@@ -97,5 +97,5 @@ Analysis
 - Gradient norm decay suggests stabilization of parameter updates.
 - No signs of gradient explosion or instability.
 
-## Citing 🤗BERT
+## Citing BERT
 This project is built upon the pretrained [BERT](https://huggingface.co/google-bert/bert-base-uncased) model from Hugging Face Transformes, leveraging its robust contextual representations for sentiment classification.
